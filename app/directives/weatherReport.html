@@ -1,0 +1,8 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+        {{ convertToDate({ date: weatherDay.dt }) | date: dateFormat }}
+    </div>
+    <div class="panel-body">
+        Daytime Temperature: {{ convertKelvinTemp({ kelTemp: weatherDay.temp.day }) }} 
+    </div>
+</div>
